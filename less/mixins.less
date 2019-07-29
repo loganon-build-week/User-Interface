@@ -14,18 +14,18 @@
 .buttonStyle(@bg-color, @text-color) {
     background: @bg-color;
     color: @text-color;
-    height: 50px;
-    width: 150px;
+    height: 4rem;
+    width: 10rem;
+    border: 1px solid @text-color;
     .borderRad();
     .flexCenter();
-    padding-top: 4%;
     font-size: 2rem;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 10px 0;
     &:hover {
         background: @text-color;
         color: @bg-color;
-        border: 1px solid @bg-color;
+        border: 2px solid @bg-color;
     }
 
     @media @mobile {

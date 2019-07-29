@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #bcbcbc;
+  color: #cecece;
   background: #5E6164;
 }
 @media (max-width: 500px) {
@@ -150,7 +150,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #bcbcbc;
+  color: #cecece;
 }
 h2 {
   font-size: 3.6rem;
@@ -234,28 +234,28 @@ p {
   padding: 0;
   margin-bottom: 4%;
 }
-#signIn {
-  background: orange;
-  color: black;
-  height: 50px;
-  width: 150px;
+.signIn {
+  background: #ffe100;
+  color: #424242;
+  height: 4rem;
+  width: 10rem;
+  border: 1px solid #424242;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   justify-items: center;
   align-content: center;
-  padding-top: 4%;
   font-size: 2rem;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 10px 0;
 }
-#signIn:hover {
-  background: black;
-  color: orange;
-  border: 1px solid orange;
+.signIn:hover {
+  background: #424242;
+  color: #ffe100;
+  border: 2px solid #ffe100;
 }
 @media (max-width: 500px) {
-  #signIn {
+  .signIn {
     padding-top: 6%;
     height: 70px;
     margin-right: 10%;
@@ -269,6 +269,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 0;
+  padding-top: 0;
 }
 @media (max-width: 500px) {
   .home {
@@ -351,22 +355,22 @@ footer {
 .home .walk .walk-text .btn {
   background: #22283A;
   color: white;
-  height: 50px;
-  width: 150px;
+  height: 4rem;
+  width: 10rem;
+  border: 1px solid white;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   justify-items: center;
   align-content: center;
-  padding-top: 4%;
   font-size: 2rem;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 .home .walk .walk-text .btn:hover {
   background: white;
   color: #22283A;
-  border: 1px solid #22283A;
+  border: 2px solid #22283A;
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
@@ -434,24 +438,24 @@ header img {
 .btn {
   background: #22283A;
   color: white;
-  height: 50px;
-  width: 150px;
+  height: 4rem;
+  width: 10rem;
+  border: 1px solid white;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   justify-items: center;
   align-content: center;
-  padding-top: 4%;
   font-size: 2rem;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 10px 0;
   margin: 20px 20px;
   padding-top: 2%;
 }
 .btn:hover {
   background: white;
   color: #22283A;
-  border: 1px solid #22283A;
+  border: 2px solid #22283A;
 }
 @media (max-width: 500px) {
   .btn {
@@ -467,5 +471,5 @@ header img {
   }
 }
 .home {
-  margin-top: 125px;
+  margin-top: 100px;
 }
