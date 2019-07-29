@@ -135,7 +135,8 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #bcbcbc;
+  background: #5E6164;
 }
 @media (max-width: 500px) {
   html,
@@ -149,7 +150,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #424242;
+  color: #bcbcbc;
 }
 h2 {
   font-size: 3.6rem;
@@ -229,12 +230,36 @@ p {
   align-content: center;
   justify-items: center;
 }
-#logo:hover {
-  box-shadow: #bcbcbc 1px 0 10px;
-}
 #logoA {
   padding: 0;
   margin-bottom: 4%;
+}
+#signIn {
+  background: orange;
+  color: black;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  padding-top: 4%;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+#signIn:hover {
+  background: black;
+  color: orange;
+  border: 1px solid orange;
+}
+@media (max-width: 500px) {
+  #signIn {
+    padding-top: 6%;
+    height: 70px;
+    margin-right: 10%;
+  }
 }
 footer {
   width: 100%;
