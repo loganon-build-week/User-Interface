@@ -27,7 +27,7 @@
 
     .features {
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         width: 100%;
 
         @media @mobile {
@@ -41,9 +41,7 @@
         }
 
         img {
-            width: 22%;
             margin: 20px 2.5%;
-            border-radius: 20px;
             
 
             @media @mobile {
@@ -197,15 +195,32 @@ header img {
 
 
 
-.features{
 
-}
 .icons{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-flow: row;
 
-    img{
-        width: 20%;
-    }
+    div{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        flex-flow: column;
+        width: 100%;
+
+
+        img{
+            width: 70%;
+            height: 22rem;
+            margin: auto;
+        }
+
+        h3{
+            font-size: 2rem;
+            padding: 0 2rem;
+        }
+    } 
+
+
 }

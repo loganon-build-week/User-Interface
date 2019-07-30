@@ -291,7 +291,7 @@ footer {
 }
 .home .features {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   width: 100%;
 }
 @media (max-width: 500px) {
@@ -303,9 +303,7 @@ footer {
   }
 }
 .home .features img {
-  width: 22%;
   margin: 20px 2.5%;
-  border-radius: 20px;
 }
 @media (max-width: 500px) {
   .home .features img {
@@ -479,9 +477,23 @@ header img {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  flex-flow: row;
 }
-.icons img {
-  width: 20%;
+.icons div {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-flow: column;
+  width: 100%;
+}
+.icons div img {
+  width: 70%;
+  height: 22rem;
+  margin: auto;
+}
+.icons div h3 {
+  font-size: 2rem;
+  padding: 0 2rem;
 }
 .member-bios {
   display: flex;
@@ -511,6 +523,9 @@ header img {
   border: 7px solid #424242;
   box-shadow: 0 0 20px #cecece;
   margin-bottom: 3rem;
+}
+.member-bios .gitIcon {
+  margin: 0.6rem 0;
 }
 .topBlurb {
   padding-bottom: 3rem;
