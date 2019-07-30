@@ -14,13 +14,13 @@
     }
 
     .intro {
-
+        
         h2 {
-            padding: 15px;
+            padding: 2rem;
         }
 
         p {
-            padding: 0 15px;
+            padding: 0rem 2rem 2rem 2rem;
         }
 
     }
@@ -29,7 +29,14 @@
         display: flex;
         flex-flow: row wrap;
         width: 100%;
+        padding:1rem  0 5rem 0;
 
+        h2{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-bottom: 2rem;
+        }
         @media @mobile {
             .sky {
                 display: none;
@@ -50,16 +57,8 @@
         }
     }
 
-    .visit-planets {
-        padding: 15px;
-
-        h3 {
-            margin-top: 11px;
-        }
-
-        p {
-            margin-top: 13px;
-        }
+    .info2{
+        padding: 3rem 2rem 2rem 2rem;
     }
 
     .walk {
@@ -76,53 +75,10 @@
             flex-flow: column-reverse;
             padding: 0 20px;
         }
-
-        .walk-text {
-            width: 50%;
-
-            @media @mobile {
-                width: 100%;
-            }
-
-            h3 {
-                margin-bottom: 10px;
-            }
-
-            p {
-                margin-bottom: 26px;
-            }
-
-            .btn {
-                .buttonStyle(@btn-bg-color, white);
-
-                @media @mobile {
-                    width: 100%;
-                    border-radius: 0px;
-                    padding-right: 1%;
-                }
-            }
-        }
-
-        .walk-img {
-            width: 46%;
-            margin-left: 4%;
-            border: 1px solid black;
-
-            @media @mobile {
-                width: 500px;
-            }
-
-            img {
-                width: 85%;
-                height: auto;
-                border-radius: 10px;
-                padding: 20px 0;
-                z-index: -1;
-                border: 1px solid black;
-
-            }
-        }
     }
+
+
+
 }
 
 // home
@@ -130,63 +86,40 @@
 
 
 
-header img {
-    width: 100%;
-    border: 1px solid black;
-
-}
-
-
-#snippet {
-
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 30px 0;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.contactForm {
-    width: 100%;
-    .flexCenter();
-
-
-    align-content: center;
-    flex-flow: column;
-
-    h2 {
-        display: flex;
-
-    }
 
 
 
+// #snippet {
 
-    form {
-        padding: 20px;
-        display: flex;
-        .flexCenter();
-        flex-flow: column;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     padding: 30px 0;
+//     font-weight: bold;
+//     text-decoration: underline;
+// }
+
+// .contactForm {
+//     width: 100%;
+//     .flexCenter();
+
+//     align-content: center;
+//     flex-flow: column;
+
+//     h2 {
+//         display: flex;
+
+//     }
+
+//     form {
+//         padding: 20px;
+//         display: flex;
+//         .flexCenter();
+//         flex-flow: column;
+//     }
+// }
 
 
-
-
-    }
-
-
-}
-
-.btn {
-  .buttonStyle(@btn-bg-color, white);
-  margin: 20px 20px;
-  padding-top: 2%;
-  @media @mobile {
-      width: 92%;
-      border-radius: 0px;
-      
-  }
-}
 
 .home{
   margin-top: 100px;
@@ -206,6 +139,7 @@ header img {
         display: flex;
         justify-content: center;
         justify-items: center;
+        align-items: center;
         flex-flow: column;
         width: 100%;
 
@@ -219,8 +153,22 @@ header img {
         h3{
             font-size: 2rem;
             padding: 0 2rem;
+            display: flex;
+            text-align: center;
+            padding: 0 auto;
         }
     } 
 
 
+}
+
+
+.banner{
+    width: 100%;
+    overflow:hidden;
+    display:block;
+    height: 200px;
+}
+#glass{
+    margin-left: -220px;
 }

@@ -284,15 +284,22 @@ footer {
   }
 }
 .home .intro h2 {
-  padding: 15px;
+  padding: 2rem;
 }
 .home .intro p {
-  padding: 0 15px;
+  padding: 0rem 2rem 2rem 2rem;
 }
 .home .features {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  padding: 1rem  0 5rem 0;
+}
+.home .features h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 2rem;
 }
 @media (max-width: 500px) {
   .home .features .sky {
@@ -310,14 +317,8 @@ footer {
     width: 100%;
   }
 }
-.home .visit-planets {
-  padding: 15px;
-}
-.home .visit-planets h3 {
-  margin-top: 11px;
-}
-.home .visit-planets p {
-  margin-top: 13px;
+.home .info2 {
+  padding: 3rem 2rem 2rem 2rem;
 }
 .home .walk {
   margin-top: 60px;
@@ -338,138 +339,6 @@ footer {
     padding: 0 20px;
   }
 }
-.home .walk .walk-text {
-  width: 50%;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text {
-    width: 100%;
-  }
-}
-.home .walk .walk-text h3 {
-  margin-bottom: 10px;
-}
-.home .walk .walk-text p {
-  margin-bottom: 26px;
-}
-.home .walk .walk-text .btn {
-  background: #22283A;
-  color: white;
-  height: 4rem;
-  width: 10rem;
-  border: 1px solid white;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 10px 0;
-}
-.home .walk .walk-text .btn:hover {
-  background: white;
-  color: #22283A;
-  border: 2px solid #22283A;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    padding-top: 6%;
-    height: 70px;
-    margin-right: 10%;
-  }
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    width: 100%;
-    border-radius: 0px;
-    padding-right: 1%;
-  }
-}
-.home .walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
-  border: 1px solid black;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-img {
-    width: 500px;
-  }
-}
-.home .walk .walk-img img {
-  width: 85%;
-  height: auto;
-  border-radius: 10px;
-  padding: 20px 0;
-  z-index: -1;
-  border: 1px solid black;
-}
-header img {
-  width: 100%;
-  border: 1px solid black;
-}
-#snippet {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 30px 0;
-  font-weight: bold;
-  text-decoration: underline;
-}
-.contactForm {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  flex-flow: column;
-}
-.contactForm h2 {
-  display: flex;
-}
-.contactForm form {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  flex-flow: column;
-}
-.btn {
-  background: #22283A;
-  color: white;
-  height: 4rem;
-  width: 10rem;
-  border: 1px solid white;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 10px 0;
-  margin: 20px 20px;
-  padding-top: 2%;
-}
-.btn:hover {
-  background: white;
-  color: #22283A;
-  border: 2px solid #22283A;
-}
-@media (max-width: 500px) {
-  .btn {
-    padding-top: 6%;
-    height: 70px;
-    margin-right: 10%;
-  }
-}
-@media (max-width: 500px) {
-  .btn {
-    width: 92%;
-    border-radius: 0px;
-  }
-}
 .home {
   margin-top: 100px;
 }
@@ -483,6 +352,7 @@ header img {
   display: flex;
   justify-content: center;
   justify-items: center;
+  align-items: center;
   flex-flow: column;
   width: 100%;
 }
@@ -494,6 +364,18 @@ header img {
 .icons div h3 {
   font-size: 2rem;
   padding: 0 2rem;
+  display: flex;
+  text-align: center;
+  padding: 0 auto;
+}
+.banner {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  height: 200px;
+}
+#glass {
+  margin-left: -220px;
 }
 .member-bios {
   display: flex;
