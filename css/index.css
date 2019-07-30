@@ -223,6 +223,7 @@ p {
   padding: 0;
   position: fixed;
   top: 0;
+  z-index: 4;
 }
 #logo {
   width: 20rem;
@@ -293,13 +294,14 @@ footer {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  padding: 1rem  0 5rem 0;
+  padding: 1rem 0 1rem 0;
 }
 .home .features h2 {
   display: flex;
   justify-content: center;
   width: 100%;
   padding-bottom: 2rem;
+  font-size: 4rem;
 }
 @media (max-width: 500px) {
   .home .features .sky {
@@ -347,6 +349,7 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-flow: row;
+  margin-bottom: 8rem;
 }
 .icons div {
   display: flex;
@@ -373,9 +376,24 @@ footer {
   overflow: hidden;
   display: block;
   height: 200px;
+  position: relative;
+  border: 4px solid #424242;
 }
-#glass {
+#myVideo {
   margin-left: -220px;
+}
+.overlay {
+  position: absolute;
+  top: 35%;
+  left: 13.5%;
+  z-index: 3;
+  font-size: 6rem;
+}
+.overlay h1 {
+  font-family: 'Allerta Stencil', sans-serif;
+  color: #ffe100;
+  text-shadow: #ffe100 1px 0 8px;
+  opacity: 0.7;
 }
 .member-bios {
   display: flex;

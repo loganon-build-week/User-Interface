@@ -5,7 +5,7 @@
     padding-top: 0;
 
 
-    p{
+    p {
         font-size: 2rem;
     }
 
@@ -14,7 +14,7 @@
     }
 
     .intro {
-        
+
         h2 {
             padding: 2rem;
         }
@@ -29,14 +29,16 @@
         display: flex;
         flex-flow: row wrap;
         width: 100%;
-        padding:1rem  0 5rem 0;
+        padding: 1rem 0 1rem 0;
 
-        h2{
+        h2 {
             display: flex;
             justify-content: center;
             width: 100%;
             padding-bottom: 2rem;
+            font-size: 4rem;
         }
+
         @media @mobile {
             .sky {
                 display: none;
@@ -49,7 +51,7 @@
 
         img {
             margin: 20px 2.5%;
-            
+
 
             @media @mobile {
                 width: 100%;
@@ -57,7 +59,7 @@
         }
     }
 
-    .info2{
+    .info2 {
         padding: 3rem 2rem 2rem 2rem;
     }
 
@@ -76,9 +78,6 @@
             padding: 0 20px;
         }
     }
-
-
-
 }
 
 // home
@@ -121,21 +120,22 @@
 
 
 
-.home{
-  margin-top: 100px;
+.home {
+    margin-top: 100px;
 }
 
 
 
 
 
-.icons{
+.icons {
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-flow: row;
+    margin-bottom: 8rem;
 
-    div{
+    div {
         display: flex;
         justify-content: center;
         justify-items: center;
@@ -144,31 +144,51 @@
         width: 100%;
 
 
-        img{
+        img {
             width: 70%;
             height: 22rem;
             margin: auto;
         }
 
-        h3{
+        h3 {
             font-size: 2rem;
             padding: 0 2rem;
             display: flex;
             text-align: center;
             padding: 0 auto;
         }
-    } 
+    }
 
 
 }
 
 
-.banner{
+.banner {
     width: 100%;
-    overflow:hidden;
-    display:block;
+    overflow: hidden;
+    display: block;
     height: 200px;
+    position: relative;
+    border: 4px solid @nav-bg;
 }
-#glass{
+
+#myVideo {
     margin-left: -220px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 35%;
+    left: 13.5%;
+    z-index: 3;
+    font-size: 6rem;
+
+    h1 {
+        font-family: 'Allerta Stencil', sans-serif;
+        color: #ffe100;
+        text-shadow: #ffe100 1px 0 8px;
+        opacity: .7;
+    }
+
 }
