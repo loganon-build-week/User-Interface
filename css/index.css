@@ -447,4 +447,5 @@ footer {
 }
 .gitIcon {
   height: 50px;
+  display: inline-block;
 }
