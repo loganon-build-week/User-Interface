@@ -163,7 +163,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -173,7 +173,7 @@ p {
   }
 }
 .navDiv {
-  width: 800px;
+  width: 1000px;
   display: flex;
   justify-content: space-between;
   flex-flow: column;
@@ -472,4 +472,29 @@ header img {
 }
 .home {
   margin-top: 100px;
+}
+.member-bios {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-flow: row wrap;
+  padding: 20px;
+}
+.member-bios .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-flow: row;
+}
+.member-bios .proDiv {
+  justify-content: center;
+  align-content: center;
+  flex-flow: column;
+  width: 43%;
+  padding: 3rem, 0;
+}
+.member-bios .proDiv .proPic {
+  width: 100%;
+  border-radius: 50%;
+  padding-bottom: 2rem;
 }
