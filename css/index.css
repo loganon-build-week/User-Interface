@@ -395,6 +395,10 @@ footer {
   text-shadow: #ffe100 1px 0 8px;
   opacity: 0.7;
 }
+.info2 h2,
+.info2 p {
+  padding-bottom: 2rem;
+}
 .member-bios {
   display: flex;
   justify-content: space-between;
@@ -417,8 +421,8 @@ footer {
   padding: 3rem, 0;
 }
 .member-bios .proDiv .proPic {
-  width: 100%;
-  height: 42rem;
+  width: 90%;
+  height: 38rem;
   border-radius: 50%;
   border: 7px solid #424242;
   box-shadow: 0 0 20px #cecece;
@@ -433,4 +437,14 @@ footer {
 .topBlurb p {
   font-size: 2rem;
   margin-bottom: 3rem;
+}
+.gitButtons {
+  height: 50px;
+}
+.gitButtons:hover {
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 10px lightgrey);
+}
+.gitIcon {
+  height: 50px;
 }
