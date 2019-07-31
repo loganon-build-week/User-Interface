@@ -39,44 +39,16 @@
         }
 
         @media @mobile {
-            .sky {
-                display: none;
-            }
-
-            .launch {
-                display: none;
-            }
+           flex-flow: row wrap;
         }
 
-        img {
-            margin: 20px 2.5%;
-
-
-            @media @mobile {
-                width: 100%;
-            }
-        }
     }
 
     .info2 {
         padding: 3rem 2rem 2rem 2rem;
     }
 
-    .walk {
-        margin-top: 60px;
-        border-top: 1px solid @main-border-color;
-        padding: 50px 60px;
-        padding-top: 20px;
-        .flexCenter();
 
-        @media @mobile {
-            width: 500px;
-            display: flex;
-            justify-content: center;
-            flex-flow: column-reverse;
-            padding: 0 20px;
-        }
-    }
 }
 
 
@@ -88,8 +60,25 @@
     margin-bottom: 6rem;
     border-top: 10px dotted @main-font-color;
     border-bottom: 10px dotted @main-font-color;
-
     padding: 5rem 0 8rem 0;
+    .mobileBreaks{
+        color: @main-font-color;
+        display: none;
+
+    }
+
+    @media @mobile{
+
+        flex-flow: row wrap;
+
+
+        .mobileBreaks{
+            display: flex;
+            width: 100%;
+            height: 1px;
+            margin: 3rem;
+        }
+    }
 
     div {
         display: flex;
@@ -102,22 +91,30 @@
 
         img {
             width: 70%;
-            height: 22rem;
-            margin: auto;
+            
+            margin-bottom: 1rem;
+
+            @media @mobile {
+                width: 50%;
+                height: 22rem;
+                margin-bottom: 2rem;
+            }
         }
 
         h3 {
+            
             font-size: 2rem;
             padding: 0 2rem;
             display: flex;
             text-align: center;
             padding: 0 auto;
-        }
+
+
     }
 
 
 }
-
+}
 
 .banner {
     width: 100%;
@@ -136,7 +133,7 @@
 .overlay {
     position: absolute;
     top: 35%;
-    left: 13.5%;
+    left: 12%;
     z-index: 3;
     font-size: 6rem;
 
@@ -159,4 +156,12 @@
 hr{
     color: @main-font-color;
     background: @main-font-color;
+}
+
+
+.signIn {
+    .buttonStyle(#ffe100, @nav-bg);
+    align-items: center;
+    font-family: 20px Arial;
+    
 }

@@ -6,7 +6,7 @@
     width: 1000px;
     display: flex;
     justify-content: space-between;
-    flex-flow: column;
+    
     margin: 0 auto;
     background: @nav-bg;
 
@@ -14,6 +14,7 @@
 
     @media @mobile {
         width: 500px;
+        
     }
 
     h1 {
@@ -28,17 +29,31 @@
 
     nav {
         color: @nav-font;
-
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-content: center;
         padding-top: 1.3%;
+
+
+        @media @mobile {
+            justify-content: center;
+            flex-flow: column;
+            
+        }
 
         div {
             display: flex;
             justify-content: space-between;
             align-content: center;
             align-items: center;
+
+
+            @media @mobile {
+                justify-content: center;
+                flex-flow: row;
+                
+            }
         }
 
 
@@ -56,8 +71,7 @@
                 text-shadow: #bcbcbc 1px 0 10px;
             }
 
-
-
+       
 
         }
     }
@@ -71,7 +85,8 @@
     background: @nav-bg;
     margin: 0;
     padding: 0;
-
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 4;
@@ -93,8 +108,9 @@
 
 .signIn {
     .buttonStyle(#ffe100, @nav-bg);
-
-
+    align-items: center;
+    font-family: 20px Arial;
+    
 }
 
 

@@ -176,7 +176,6 @@ p {
   width: 1000px;
   display: flex;
   justify-content: space-between;
-  flex-flow: column;
   margin: 0 auto;
   background: #424242;
 }
@@ -193,16 +192,29 @@ p {
 }
 .navDiv nav {
   color: #454A59;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-content: center;
   padding-top: 1.3%;
+}
+@media (max-width: 500px) {
+  .navDiv nav {
+    justify-content: center;
+    flex-flow: column;
+  }
 }
 .navDiv nav div {
   display: flex;
   justify-content: space-between;
   align-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .navDiv nav div {
+    justify-content: center;
+    flex-flow: row;
+  }
 }
 .navDiv nav a {
   font-weight: bold;
@@ -221,6 +233,8 @@ p {
   background: #424242;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   z-index: 4;
@@ -249,18 +263,13 @@ p {
   font-size: 2rem;
   font-weight: bold;
   margin: 10px 0;
+  align-items: center;
+  font-family: 20px Arial;
 }
 .signIn:hover {
   background: #424242;
   color: #ffe100;
   border: 2px solid #ffe100;
-}
-@media (max-width: 500px) {
-  .signIn {
-    padding-top: 6%;
-    height: 70px;
-    margin-right: 10%;
-  }
 }
 footer {
   width: 100%;
@@ -304,42 +313,12 @@ footer {
   font-size: 4rem;
 }
 @media (max-width: 500px) {
-  .home .features .sky {
-    display: none;
-  }
-  .home .features .launch {
-    display: none;
-  }
-}
-.home .features img {
-  margin: 20px 2.5%;
-}
-@media (max-width: 500px) {
-  .home .features img {
-    width: 100%;
+  .home .features {
+    flex-flow: row wrap;
   }
 }
 .home .info2 {
   padding: 3rem 2rem 2rem 2rem;
-}
-.home .walk {
-  margin-top: 60px;
-  border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-}
-@media (max-width: 500px) {
-  .home .walk {
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column-reverse;
-    padding: 0 20px;
-  }
 }
 .icons {
   width: 100%;
@@ -351,6 +330,21 @@ footer {
   border-bottom: 10px dotted #cecece;
   padding: 5rem 0 8rem 0;
 }
+.icons .mobileBreaks {
+  color: #cecece;
+  display: none;
+}
+@media (max-width: 500px) {
+  .icons {
+    flex-flow: row wrap;
+  }
+  .icons .mobileBreaks {
+    display: flex;
+    width: 100%;
+    height: 1px;
+    margin: 3rem;
+  }
+}
 .icons div {
   display: flex;
   justify-content: center;
@@ -361,8 +355,14 @@ footer {
 }
 .icons div img {
   width: 70%;
-  height: 22rem;
-  margin: auto;
+  margin-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .icons div img {
+    width: 50%;
+    height: 22rem;
+    margin-bottom: 2rem;
+  }
 }
 .icons div h3 {
   font-size: 2rem;
@@ -385,7 +385,7 @@ footer {
 .overlay {
   position: absolute;
   top: 35%;
-  left: 13.5%;
+  left: 12%;
   z-index: 3;
   font-size: 6rem;
 }
@@ -402,6 +402,28 @@ footer {
 hr {
   color: #cecece;
   background: #cecece;
+}
+.signIn {
+  background: #ffe100;
+  color: #424242;
+  height: 4rem;
+  width: 10rem;
+  border: 1px solid #424242;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  align-items: center;
+  font-family: 20px Arial;
+}
+.signIn:hover {
+  background: #424242;
+  color: #ffe100;
+  border: 2px solid #ffe100;
 }
 .member-bios {
   display: flex;
