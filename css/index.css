@@ -349,7 +349,10 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-flow: row;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
+  border-top: 8px solid #cecece;
+  border-bottom: 8px solid #cecece;
+  padding: 5rem 1rem 9rem 1rem;
 }
 .icons div {
   display: flex;
@@ -399,6 +402,10 @@ footer {
 .info2 p {
   padding-bottom: 2rem;
 }
+hr {
+  color: #cecece;
+  background: #cecece;
+}
 .member-bios {
   display: flex;
   justify-content: space-between;
@@ -439,7 +446,6 @@ footer {
   margin-bottom: 3rem;
 }
 .gitButtons {
-  width: 200px;
   height: 50px;
 }
 .gitButtons:hover {
