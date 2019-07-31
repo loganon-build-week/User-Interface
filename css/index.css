@@ -439,6 +439,7 @@ footer {
   margin-bottom: 3rem;
 }
 .gitButtons {
+  width: 200px;
   height: 50px;
 }
 .gitButtons:hover {
