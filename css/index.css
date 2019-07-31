@@ -516,7 +516,7 @@ hr {
   align-content: center;
   flex-flow: column;
   width: 43%;
-  padding: 3rem, 0;
+  margin: 3rem, 0;
 }
 @media (max-width: 500px) {
   .member-bios .proDiv {
@@ -534,7 +534,7 @@ hr {
 }
 .member-bios .proDiv .proPic {
   width: 90%;
-  height: 38rem;
+  height: 67%;
   border-radius: 50%;
   border: 7px solid #424242;
   box-shadow: 0 0 20px #cecece;
