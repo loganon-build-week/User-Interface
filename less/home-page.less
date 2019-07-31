@@ -10,6 +10,7 @@
 
     @media @mobile {
         width: 500px;
+        margin-top: 165px;
     }
 
     .intro {
@@ -39,7 +40,7 @@
         }
 
         @media @mobile {
-           flex-flow: row wrap;
+           display: none;
         }
 
     }
@@ -97,7 +98,7 @@
             @media @mobile {
                 width: 50%;
                 height: 22rem;
-                margin-bottom: 2rem;
+                margin: 2rem 0 2rem 0;
             }
         }
 
@@ -127,6 +128,9 @@
 
 #myVideo {
     margin-left: -220px;
+    @media @mobile{
+        margin-left: -260px;
+    }
 
 }
 
@@ -137,11 +141,20 @@
     z-index: 3;
     font-size: 6rem;
 
+    @media @mobile{
+      left: 0;  
+      top: 17%;
+    }
+
     h1 {
         font-family: 'Allerta Stencil', sans-serif;
         color: #ffe100;
         text-shadow: #ffe100 1px 0 8px;
-        opacity: .7;
+        opacity: .72;
+
+        @media @mobile{
+            text-align: center;
+        }
     }
 
 }
@@ -156,6 +169,7 @@
 hr{
     color: @main-font-color;
     background: @main-font-color;
+    height: 1px;
 }
 
 
@@ -165,3 +179,29 @@ hr{
     font-family: 20px Arial;
     
 }
+
+
+.mobileCarousel{
+    display: none;
+
+    @media @mobile{
+        display: flex;
+    }
+    .innerMobileCarousel{
+        
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        flex-flow: column;
+        img{
+            width: 75%;
+            margin-bottom: 2rem;
+        }
+        h3{
+            text-align: center;
+        }
+    }
+}
+

@@ -152,6 +152,15 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #cecece;
 }
+@media (max-width: 500px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-align: center;
+  }
+}
 h2 {
   font-size: 3.6rem;
 }
@@ -161,6 +170,11 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+@media (max-width: 500px) {
+  p {
+    text-align: center;
+  }
 }
 .container {
   max-width: 1000px;
@@ -250,6 +264,7 @@ p {
   margin-bottom: 4%;
 }
 .signIn {
+  font-family: 20px Arial;
   background: #ffe100;
   color: #424242;
   height: 4rem;
@@ -264,12 +279,16 @@ p {
   font-weight: bold;
   margin: 10px 0;
   align-items: center;
-  font-family: 20px Arial;
 }
 .signIn:hover {
   background: #424242;
   color: #ffe100;
   border: 2px solid #ffe100;
+}
+@media (max-width: 500px) {
+  #logoDiv {
+    border-bottom: 1px solid #cecece;
+  }
 }
 footer {
   width: 100%;
@@ -291,6 +310,7 @@ footer {
 @media (max-width: 500px) {
   .home {
     width: 500px;
+    margin-top: 165px;
   }
 }
 .home .intro h2 {
@@ -314,7 +334,7 @@ footer {
 }
 @media (max-width: 500px) {
   .home .features {
-    flex-flow: row wrap;
+    display: none;
   }
 }
 .home .info2 {
@@ -361,7 +381,7 @@ footer {
   .icons div img {
     width: 50%;
     height: 22rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0 2rem 0;
   }
 }
 .icons div h3 {
@@ -382,6 +402,11 @@ footer {
 #myVideo {
   margin-left: -220px;
 }
+@media (max-width: 500px) {
+  #myVideo {
+    margin-left: -260px;
+  }
+}
 .overlay {
   position: absolute;
   top: 35%;
@@ -389,11 +414,22 @@ footer {
   z-index: 3;
   font-size: 6rem;
 }
+@media (max-width: 500px) {
+  .overlay {
+    left: 0;
+    top: 17%;
+  }
+}
 .overlay h1 {
   font-family: 'Allerta Stencil', sans-serif;
   color: #ffe100;
   text-shadow: #ffe100 1px 0 8px;
-  opacity: 0.7;
+  opacity: 0.72;
+}
+@media (max-width: 500px) {
+  .overlay h1 {
+    text-align: center;
+  }
 }
 .info2 h2,
 .info2 p {
@@ -402,6 +438,7 @@ footer {
 hr {
   color: #cecece;
   background: #cecece;
+  height: 1px;
 }
 .signIn {
   background: #ffe100;
@@ -425,6 +462,29 @@ hr {
   color: #ffe100;
   border: 2px solid #ffe100;
 }
+.mobileCarousel {
+  display: none;
+}
+@media (max-width: 500px) {
+  .mobileCarousel {
+    display: flex;
+  }
+}
+.mobileCarousel .innerMobileCarousel {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-flow: column;
+}
+.mobileCarousel .innerMobileCarousel img {
+  width: 75%;
+  margin-bottom: 2rem;
+}
+.mobileCarousel .innerMobileCarousel h3 {
+  text-align: center;
+}
 .member-bios {
   display: flex;
   justify-content: space-between;
@@ -432,12 +492,25 @@ hr {
   flex-flow: row wrap;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .member-bios {
+    justify-content: center;
+    flex-flow: column;
+  }
+}
 .member-bios .row {
   display: flex;
   width: 100%;
   justify-content: space-between;
   flex-flow: row;
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 500px) {
+  .member-bios .row {
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 0;
+  }
 }
 .member-bios .proDiv {
   justify-content: center;
@@ -445,6 +518,20 @@ hr {
   flex-flow: column;
   width: 43%;
   padding: 3rem, 0;
+}
+@media (max-width: 500px) {
+  .member-bios .proDiv {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width: 500px) {
+  .member-bios .proDiv h3 {
+    padding: 1rem;
+    border-bottom: 1px solid #cecece;
+  }
 }
 .member-bios .proDiv .proPic {
   width: 90%;
@@ -470,6 +557,16 @@ hr {
 .gitButtons:hover {
   border-radius: 50%;
   filter: drop-shadow(0px 0px 10px lightgrey);
+}
+@media (max-width: 500px) {
+  .gitButtons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-flow: row;
+  }
 }
 .gitIcon {
   height: 50px;
