@@ -495,7 +495,6 @@ hr {
 @media (max-width: 500px) {
   .member-bios {
     justify-content: center;
-    flex-flow: column;
   }
 }
 .member-bios .row {
