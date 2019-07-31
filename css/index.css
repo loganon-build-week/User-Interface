@@ -350,9 +350,9 @@ footer {
   justify-content: space-around;
   flex-flow: row;
   margin-bottom: 6rem;
-  border-top: 6px dotted #cecece;
-  border-bottom: 6px dotted #cecece;
-  padding: 5rem 1rem 8rem 1rem;
+  border-top: 10px dotted #cecece;
+  border-bottom: 10px dotted #cecece;
+  padding: 5rem 0 8rem 0;
 }
 .icons div {
   display: flex;
