@@ -502,16 +502,27 @@ hr {
   width: 100%;
   justify-content: space-between;
   flex-flow: row;
+<<<<<<< HEAD
   padding-bottom: 8rem;
+=======
+  padding-bottom: 5rem;
+>>>>>>> b401a4ad5ab16d4a3241b081f7eecf3a570f991d
 }
 @media (max-width: 500px) {
   .member-bios .row {
     justify-content: center;
     flex-flow: column;
+<<<<<<< HEAD
   }
 }
 .member-bios .proDiv {
   display: block;
+=======
+    padding-bottom: 0;
+  }
+}
+.member-bios .proDiv {
+>>>>>>> b401a4ad5ab16d4a3241b081f7eecf3a570f991d
   justify-content: center;
   align-content: center;
   flex-flow: column;
@@ -526,20 +537,29 @@ hr {
     margin-bottom: 10rem;
   }
 }
+<<<<<<< HEAD
 .member-bios .proDiv h3 {
   font-size: 2rem;
 }
+=======
+>>>>>>> b401a4ad5ab16d4a3241b081f7eecf3a570f991d
 @media (max-width: 500px) {
   .member-bios .proDiv h3 {
     padding: 1rem;
     border-bottom: 1px solid #cecece;
   }
 }
+<<<<<<< HEAD
 .member-bios .proDiv h2 {
   font-size: 3.5rem;
 }
 .member-bios .proDiv .proPic {
   width: 90%;
+=======
+.member-bios .proDiv .proPic {
+  width: 90%;
+  height: 67%;
+>>>>>>> b401a4ad5ab16d4a3241b081f7eecf3a570f991d
   border-radius: 50%;
   border: 7px solid #424242;
   box-shadow: 0 0 20px #cecece;
