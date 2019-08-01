@@ -20,6 +20,14 @@
        @media @mobile{
         justify-content: center;
         flex-flow: column;
+
+        @media @tablet{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            flex-flow: row;
+            padding-bottom: 8.1rem; 
+        }
         
     }
 
@@ -33,7 +41,14 @@
         width: 43%;
         margin: 3rem, 0;
        
-
+        @media @tablet{
+            display: block;
+            justify-content: center;
+            align-content: center;
+            flex-flow: column;
+            width: 43%;
+            margin: 3rem, 0;
+        }
 
         @media @mobile{
             display: flex;
@@ -104,86 +119,6 @@
     display: inline-block;
 }
 
-
-
-/* entire container, keeps perspective */
-.flip-container {
-  perspective: 1000px;
-    
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
-.flip-container, .front, .back {
-	width:450px;
-    height: 400px;
-    
-}
-
-/* flip speed goes here */
-.flipper {
-	transition: 0.7s;
-	transform-style: preserve-3d;
-
-	position: relative;
-}
-
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	// top: 0;
-	// left: 0;
-}
-
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-    transform: rotateY(0deg);
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-  
-}
-
-/* back, initially hidden pane */
-.back {
-    transform: rotateY(180deg);
-    background: @nav-bg;
-    display: flex;
-    width: 90%;
-    
-    border-radius: 50%;
-    border: 7px solid @nav-bg;
-    box-shadow: 0 0 20px @main-font-color;
-    // margin-bottom: 3rem;
-
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-   
-    p{
-        color: whitesmoke;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        border-radius: 50%;
-        text-align: center;
-
-    }
-
-}
-
-
 .proPic{
     width: 90%;
     
@@ -191,6 +126,14 @@
     border: 7px solid @nav-bg;
     box-shadow: 0 0 20px @main-font-color;
     margin-bottom: 3rem;
+
+    @media @tablet{
+        width: 90%;
+        border-radius: 50%;
+        border: 7px solid @nav-bg;
+        box-shadow: 0 0 20px @main-font-color;
+        margin-bottom: 3rem;
+    }
 }
 
 

@@ -425,6 +425,12 @@ footer {
     top: 17%;
   }
 }
+@media screen and (max-width: 900px) {
+  .overlay {
+    left: 1%;
+    top: 32%;
+  }
+}
 .overlay h1 {
   font-family: 'Allerta Stencil', sans-serif;
   color: #ffe100;
@@ -515,6 +521,15 @@ hr {
     flex-flow: column;
   }
 }
+@media (max-width: 500px) and (max-width: 800px) {
+  .member-bios .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-flow: row;
+    padding-bottom: 8.1rem;
+  }
+}
 .member-bios .proDiv {
   display: block;
   justify-content: center;
@@ -522,6 +537,16 @@ hr {
   flex-flow: column;
   width: 43%;
   margin: 3rem, 0;
+}
+@media (max-width: 800px) {
+  .member-bios .proDiv {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column;
+    width: 43%;
+    margin: 3rem, 0;
+  }
 }
 @media (max-width: 500px) {
   .member-bios .proDiv {
@@ -574,72 +599,19 @@ hr {
   height: 50px;
   display: inline-block;
 }
-/* entire container, keeps perspective */
-.flip-container {
-  perspective: 1000px;
-}
-/* flip the pane when hovered */
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  transform: rotateY(180deg);
-}
-.flip-container,
-.front,
-.back {
-  width: 450px;
-  height: 400px;
-}
-/* flip speed goes here */
-.flipper {
-  transition: 0.7s;
-  transform-style: preserve-3d;
-  position: relative;
-}
-/* hide back of pane during swap */
-.front,
-.back {
-  backface-visibility: hidden;
-  position: absolute;
-}
-/* front pane, placed above back */
-.front {
-  z-index: 2;
-  /* for firefox 31 */
-  transform: rotateY(0deg);
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-}
-/* back, initially hidden pane */
-.back {
-  transform: rotateY(180deg);
-  background: #424242;
-  display: flex;
-  width: 90%;
-  border-radius: 50%;
-  border: 7px solid #424242;
-  box-shadow: 0 0 20px #cecece;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-}
-.back p {
-  color: whitesmoke;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  justify-items: center;
-  align-items: center;
-  border-radius: 50%;
-  text-align: center;
-}
 .proPic {
   width: 90%;
   border-radius: 50%;
   border: 7px solid #424242;
   box-shadow: 0 0 20px #cecece;
   margin-bottom: 3rem;
+}
+@media (max-width: 800px) {
+  .proPic {
+    width: 90%;
+    border-radius: 50%;
+    border: 7px solid #424242;
+    box-shadow: 0 0 20px #cecece;
+    margin-bottom: 3rem;
+  }
 }
