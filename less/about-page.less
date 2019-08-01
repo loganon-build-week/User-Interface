@@ -1,0 +1,113 @@
+//About-us code here
+
+.member-bios{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-flow: row wrap;
+    padding: 20px;
+    @media @mobile{
+        justify-content: center;
+    }
+
+   .row{
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+       flex-flow: row;
+       padding-bottom: 8rem;
+
+       @media @mobile{
+        justify-content: center;
+        flex-flow: column;
+        
+    }
+
+   }
+
+    .proDiv{
+        display: block;
+        justify-content: center;
+        align-content: center;
+        flex-flow: column;
+        width: 43%;
+        margin: 3rem, 0;
+       
+
+
+        @media @mobile{
+            display: flex;
+            flex-flow: column wrap;
+            width: 100%;
+            margin-bottom: 10rem;
+            
+        }
+        
+        h3{
+            @media @mobile{
+                padding: 1rem;
+                border-bottom: 1px solid @main-font-color;
+            }
+
+            font-size: 2rem;
+        }
+
+
+        h2{
+            font-size: 3.5rem;
+        }
+
+        .proPic{
+            width: 90%;
+            
+            border-radius: 50%;
+            border: 7px solid @nav-bg;
+            box-shadow: 0 0 20px @main-font-color;
+            margin-bottom: 3rem;
+        }
+
+        
+    }
+
+    .gitIcon{
+        margin: .6rem 0;
+    }
+
+}
+
+.topBlurb{
+    padding-bottom: 3rem;
+    p{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+
+    }
+}
+
+
+.gitButtons{
+    height: 50px;
+    &:hover{
+        border-radius: 50%;
+        
+        filter: drop-shadow(0px 0px 10px lightgrey);
+    }
+
+    @media @mobile{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        flex-flow: row;
+        
+    }
+
+}
+
+
+.gitIcon{
+    height: 50px;
+    display: inline-block;
+}
+

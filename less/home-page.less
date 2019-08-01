@@ -1,0 +1,207 @@
+// Home Content
+
+.home {
+    padding-top: 0;
+    margin-top: 100px;
+
+    p {
+        font-size: 2rem;
+    }
+
+    @media @mobile {
+        width: 500px;
+        margin-top: 165px;
+    }
+
+    .intro {
+
+        h2 {
+            padding: 2rem;
+        }
+
+        p {
+            padding: 0rem 2rem 2rem 2rem;
+        }
+
+    }
+
+    .features {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        padding: 1rem 0 1rem 0;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-bottom: 2rem;
+            font-size: 4rem;
+        }
+
+        @media @mobile {
+           display: none;
+        }
+
+    }
+
+    .info2 {
+        padding: 3rem 2rem 2rem 2rem;
+    }
+
+
+}
+
+
+.icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+    margin-bottom: 6rem;
+    border-top: 10px dotted @main-font-color;
+    border-bottom: 10px dotted @main-font-color;
+    padding: 5rem 0 8rem 0;
+    .mobileBreaks{
+        color: @main-font-color;
+        display: none;
+
+    }
+
+    @media @mobile{
+
+        flex-flow: row wrap;
+
+
+        .mobileBreaks{
+            display: flex;
+            width: 100%;
+            height: 1px;
+            margin: 3rem;
+        }
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        flex-flow: column;
+        width: 100%;
+
+
+        img {
+            width: 70%;
+            
+            margin-bottom: 1rem;
+
+            @media @mobile {
+                width: 50%;
+                height: 22rem;
+                margin: 2rem 0 2rem 0;
+            }
+        }
+
+        h3 {
+            
+            font-size: 2rem;
+            padding: 0 2rem;
+            display: flex;
+            text-align: center;
+            padding: 0 auto;
+
+
+    }
+
+
+}
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    height: 200px;
+    position: relative;
+    border: 4px solid @nav-bg;
+}
+
+#myVideo {
+    margin-left: -220px;
+    @media @mobile{
+        margin-left: -260px;
+    }
+
+}
+
+.overlay {
+    position: absolute;
+    top: 35%;
+    left: 12%;
+    z-index: 3;
+    font-size: 6rem;
+
+    @media @mobile{
+      left: 0;  
+      top: 17%;
+    }
+
+    h1 {
+        font-family: 'Allerta Stencil', sans-serif;
+        color: #ffe100;
+        text-shadow: #ffe100 1px 0 8px;
+        opacity: .72;
+
+        @media @mobile{
+            text-align: center;
+        }
+    }
+
+}
+
+.info2{
+    h2, p{
+        padding-bottom: 2rem;
+    }
+}
+
+
+hr{
+    color: @main-font-color;
+    background: @main-font-color;
+    height: 1px;
+}
+
+
+.signIn {
+    .buttonStyle(#ffe100, @nav-bg);
+    align-items: center;
+    font-family: 20px Arial;
+    
+}
+
+
+.mobileCarousel{
+    display: none;
+
+    @media @mobile{
+        display: flex;
+    }
+    .innerMobileCarousel{
+        
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        flex-flow: column;
+        img{
+            width: 75%;
+            margin-bottom: 2rem;
+        }
+        h3{
+            text-align: center;
+        }
+    }
+}
+
