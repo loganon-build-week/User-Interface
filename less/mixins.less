@@ -1,0 +1,35 @@
+// Mixins Here
+
+.borderRad() {
+    border-radius: 10px;
+}
+
+.flexCenter() {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.buttonStyle(@bg-color, @text-color) {
+    font-family: 20px Arial;
+    background: @bg-color;
+    color: @text-color;
+    height: 4rem;
+    width: 10rem;
+    border: 1px solid @text-color;
+    .borderRad();
+    .flexCenter();
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    &:hover {
+        background: @text-color;
+        color: @bg-color;
+        border: 2px solid @bg-color;
+    }
+
+}
+
+
