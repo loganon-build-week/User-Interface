@@ -519,15 +519,7 @@ hr {
   .member-bios .row {
     justify-content: center;
     flex-flow: column;
-  }
-}
-@media (max-width: 500px) and (max-width: 800px) {
-  .member-bios .row {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-flow: row;
-    padding-bottom: 8.1rem;
+    padding-bottom: 0;
   }
 }
 .member-bios .proDiv {
